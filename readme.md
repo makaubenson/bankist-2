@@ -1,1 +1,1 @@
-# Numbers, Dates, INTL and Timers
+# Numbers, Dates, Internationalization and Timers
