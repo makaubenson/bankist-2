@@ -4,9 +4,6 @@
 /////////////////////////////////////////////////
 // BANKIST APP
 
-/////////////////////////////////////////////////
-// Data
-
 // DIFFERENT DATA! Contains movement dates, currency and locale
 
 const account1 = {
@@ -220,7 +217,6 @@ btnLoan.addEventListener('click', function (e) {
 //The findIndex() METHOD
 btnClose.addEventListener('click', function (e) {
   e.preventDefault();
-  // console.log('Delete');
 
   if (
     inputCloseUsername.value === currentAccount.username &&
