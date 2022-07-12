@@ -239,3 +239,6 @@ btnSort.addEventListener('click', function (e) {
   displayMovements(currentAccount.movements, !sorted);
   sorted = !sorted;
 });
+//Lectures
+//Converting strings to numbers
+console.log(Number('23'));
