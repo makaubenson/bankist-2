@@ -247,8 +247,9 @@ console.log(+'23');
 const age = '45';
 const intAge = Number(age);
 console.log(typeof intAge); //number
-
 //Or
-
 const floatAge = +age;
 console.log(typeof floatAge); //number
+
+//Parsing
+console.log(Number.parseInt('30px', 10)); //30
