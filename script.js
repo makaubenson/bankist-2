@@ -254,3 +254,6 @@ console.log(typeof floatAge); //number
 //Parsing
 console.log(Number.parseInt('30px', 10)); //30
 console.log(Number.parseInt('30.15px', 10)); //30
+
+console.log(Number.parseFloat('30px', 10)); //30
+console.log(Number.parseFloat('30.15px', 10)); //30.15
