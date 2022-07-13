@@ -416,3 +416,7 @@ console.log(new Date(2142246180000));
 
 //get current time stamp
 console.log(Date.now());
+
+//set versions of the Date methods
+future.setFullYear(2040);
+console.log(future);
