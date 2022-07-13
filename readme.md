@@ -84,3 +84,4 @@
 ### Rounding Integers
 
 - `console.log(Math.trunc(23.3));` - Removes any decimal part
+- `console.log(Math.round(23.9)); //24` Rounds to the nearest integer

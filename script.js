@@ -306,4 +306,6 @@ const randomInt = (min, max) =>
 console.log(randomInt(10, 20));
 
 //Rounding Integers
-console.log(Math.trunc(23.3));
+console.log(Math.trunc(23.3)); //23
+
+console.log(Math.round(23.9)); //24
