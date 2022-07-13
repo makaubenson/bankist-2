@@ -196,7 +196,8 @@ btnTransfer.addEventListener('click', function (e) {
 btnLoan.addEventListener('click', function (e) {
   e.preventDefault();
   //get the requested loan amount
-  const amount = Number(inputLoanAmount.value);
+  const amount = Math.floor(inputLoanAmount.value);
+
   //condition
   if (
     amount > 0 &&
@@ -314,9 +315,9 @@ console.log(Math.ceil(23.9)); //24
 
 console.log(Math.floor(23.3)); //23
 console.log(Math.floor(23.9)); //23
-*/
 
 //Rounding Decimals
 console.log((2.7).toFixed(0)); //3  a string
 console.log((2.7).toFixed(3)); //2.700 a string
 console.log((2.345).toFixed(2)); //2.35 a string
+*/
