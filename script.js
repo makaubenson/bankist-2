@@ -240,6 +240,7 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 //Lectures
+/*
 //Converting strings to numbers
 console.log(Number('23'));
 console.log(+'23');
@@ -299,7 +300,7 @@ console.log(Math.PI * Number.parseFloat('10px') ** 2);
 
 console.log(Math.trunc(Math.random() * 6));
 console.log(Math.trunc(Math.random() * 6));
-
+*/
 const randomInt = (min, max) =>
   Math.trunc(Math.random() * (max - min) + 1) + min;
-console.log(randomInt(1, 10));
+console.log(randomInt(10, 20));
