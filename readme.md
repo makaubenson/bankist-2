@@ -28,3 +28,10 @@
 - `console.log(Number.parseFloat('30px', 10)); //30`- The method is called on the object `Number`
 - can be reached by
   `console.log(parseFloat('30px', 10)); //30`- The number method is removed.
+
+### isNan()
+
+- `console.log(Number.isNaN(10)); //false`
+- `console.log(Number.isNaN('10')); //false`
+- `console.log(Number.isNaN(+'10x')); //true`
+- `console.log(Number.isNaN(23 / 0)); //false`- This is false since 23 / 0 is infinity and thus js views it as Not a Number

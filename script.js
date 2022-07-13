@@ -257,3 +257,8 @@ console.log(Number.parseInt('30.15px', 10)); //30
 
 console.log(Number.parseFloat('30px', 10)); //30
 console.log(Number.parseFloat('30.15px', 10)); //30.15
+
+console.log(Number.isNaN(10)); //false
+console.log(Number.isNaN('10')); //false
+console.log(Number.isNaN(+'10x')); //true
+console.log(Number.isNaN(23 / 0)); //false
