@@ -378,5 +378,6 @@ console.log(12n / 3n); //4n
 */
 
 //Creating Dates
+//Method 1
 const now = new Date();
 console.log(now); //Wed Jul 13 2022 12:04:20 GMT+0300 (East Africa Time)

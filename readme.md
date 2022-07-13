@@ -167,3 +167,5 @@
 ### Creating Dates
 
 - There are 4 ways of creating dates.
+- `const now = new Date();`
+- `console.log(now); //Wed Jul 13 2022 12:04:20 GMT+0300 (East Africa Time)`
