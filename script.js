@@ -283,3 +283,8 @@ console.log(Math.sqrt(25)); //5
 console.log(25 ** (1 / 2)); // 2 is the square
 
 console.log(8 ** (1 / 3)); // calculating the cubic root
+
+//find max value, using (Math.max())
+console.log(Math.max(5, 18, 23, 11, 2)); //23
+console.log(Math.max(5, 18, '23', 11, 2)); //23
+console.log(Math.max(5, 18, '23px', 11, 2)); //NaN

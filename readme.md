@@ -59,3 +59,9 @@
 - you can use exponentation operator
 - `console.log(25 ** (1 / 2)); // 2 is the square`
 - `console.log(8 ** (1 / 3)); // calculating the cubic root`
+
+### find max value, using (Math.max())
+
+- console.log(Math.max(5, 18, 23, 11, 2)); //23
+- console.log(Math.max(5, 18, '23', 11, 2)); //23 - It results to 23 since it does type coercion of string 23 to number 23
+- console.log(Math.max(5, 18, '23px', 11, 2)); //NaN - results to NaN since it doesnt does parsing
