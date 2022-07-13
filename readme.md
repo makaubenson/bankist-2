@@ -85,3 +85,17 @@
 
 - `console.log(Math.trunc(23.3));` - Removes any decimal part
 - `console.log(Math.round(23.9)); //24` Rounds to the nearest integer
+
+### Math.ceil()
+
+- `The Math.ceil() function always rounds a number up to the next largest integer.`
+- console.log(Math.ceil(23.3)); //24
+- console.log(Math.ceil(23.9)); //24
+- does type coercion
+
+### Math.floor()
+
+- The Math.floor() function returns the largest integer less than or equal to a given number.
+- console.log(Math.floor(23.3)); //23
+- console.log(Math.floor(23.9)); //23
+- does type coercion

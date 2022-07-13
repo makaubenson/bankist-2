@@ -303,9 +303,14 @@ console.log(Math.trunc(Math.random() * 6));
 */
 const randomInt = (min, max) =>
   Math.trunc(Math.random() * (max - min) + 1) + min;
-console.log(randomInt(10, 20));
+// console.log(randomInt(10, 20));
 
 //Rounding Integers
 console.log(Math.trunc(23.3)); //23
-
 console.log(Math.round(23.9)); //24
+
+console.log(Math.ceil(23.3)); //24
+console.log(Math.ceil(23.9)); //24
+
+console.log(Math.floor(23.3)); //23
+console.log(Math.floor(23.9)); //23
