@@ -118,3 +118,9 @@
 
 - ` const isEven = function (n) { return n % 2 === 0; };`
 - `console.log(isEven(8)); //true`
+
+### Numeric Separators
+
+- `const diameter = 287_460_000_000;`
+- `console.log(diameter);`-Output: 287460000000
+- Undescores can actually be used as numeric separators.

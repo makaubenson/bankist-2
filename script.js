@@ -320,7 +320,7 @@ console.log(Math.floor(23.9)); //23
 console.log((2.7).toFixed(0)); //3  a string
 console.log((2.7).toFixed(3)); //2.700 a string
 console.log((2.345).toFixed(2)); //2.35 a string
-*/
+
 //The Remainder Operator
 console.log(5 % 2); //1
 console.log(5 / 2); //2.5
@@ -343,3 +343,8 @@ labelBalance.addEventListener('click', function () {
     if (i % 3 === 0) row.style.backgroundColor = 'blue';
   });
 });
+*/
+
+//Numeric Separators
+const diameter = 287_460_000_000;
+console.log(diameter);
