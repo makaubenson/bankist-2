@@ -349,5 +349,11 @@ labelBalance.addEventListener('click', function () {
 const diameter = 287_460_000_000;
 console.log(diameter);
 
-const priceCents = 345_99;
-console.log(priceCents); //34599
+const price = 345_99;
+console.log(price); //34599
+
+const PI = 3.1_41_5;
+console.log(PI);
+
+console.log(Number('230_000')); //NaN
+console.log(parseInt('230_000')); //230

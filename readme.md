@@ -124,3 +124,9 @@
 - `const diameter = 287_460_000_000;`
 - `console.log(diameter);`-Output: 287460000000
 - Undescores can actually be used as numeric separators.
+- The underscore can only be used between numbers. Not Start or End of a number.
+
+#### undescore numeric separator use case
+
+- `console.log(Number('230_000')); //NaN`
+- `console.log(parseInt('230_000')); //230`
