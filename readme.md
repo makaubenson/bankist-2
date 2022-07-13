@@ -35,3 +35,11 @@
 - `console.log(Number.isNaN('10')); //false`
 - `console.log(Number.isNaN(+'10x')); //true`
 - `console.log(Number.isNaN(23 / 0)); //false`- This is false since 23 / 0 is infinity and thus js views it as Not a Number
+
+### isFinite()
+
+- The global isFinite() function determines whether the passed value is a finite number. If needed, the parameter is first converted to a number.
+- `console.log(Number.isFinite(10)); //true`
+- `console.log(Number.isFinite('10')); //false`
+- `console.log(Number.isFinite(+'10x')); //false`
+- `console.log(Number.isFinite(23 / 0)); //false`

@@ -252,13 +252,19 @@ const floatAge = +age;
 console.log(typeof floatAge); //number
 
 //Parsing
-console.log(Number.parseInt('30px', 10)); //30
-console.log(Number.parseInt('30.15px', 10)); //30
+// console.log(Number.parseInt('30px', 10)); //30
+// console.log(Number.parseInt('30.15px', 10)); //30
 
-console.log(Number.parseFloat('30px', 10)); //30
-console.log(Number.parseFloat('30.15px', 10)); //30.15
+// console.log(Number.parseFloat('30px', 10)); //30
+// console.log(Number.parseFloat('30.15px', 10)); //30.15
 
-console.log(Number.isNaN(10)); //false
-console.log(Number.isNaN('10')); //false
-console.log(Number.isNaN(+'10x')); //true
-console.log(Number.isNaN(23 / 0)); //false
+// console.log(Number.isNaN(10)); //false
+// console.log(Number.isNaN('10')); //false
+// console.log(Number.isNaN(+'10x')); //true
+// console.log(Number.isNaN(23 / 0)); //false
+
+//isFinite()- check if value is a real number
+console.log(Number.isFinite(10)); //true
+console.log(Number.isFinite('10')); //false
+console.log(Number.isFinite(+'10x')); //false
+console.log(Number.isFinite(23 / 0)); //false
