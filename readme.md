@@ -115,3 +115,6 @@
 - console.log(5 / 2); //2.5
 - console.log(8 % 3); //2
 - console.log(8 / 3); //2.6666666666666665
+
+- ` const isEven = function (n) { return n % 2 === 0; };`
+- `console.log(isEven(8)); //true`
