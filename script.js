@@ -384,3 +384,4 @@ console.log(now); //Wed Jul 13 2022 12:04:20 GMT+0300 (East Africa Time)
 
 // Method 2
 console.log(new Date('July 13 2022 12:05:41')); //Wed Jul 13 2022 12:05:41 GMT+0300 (East Africa Time)
+console.log(new Date('December 24, 2015')); //Thu Dec 24 2015 00:00:00 GMT+0300 (East Africa Time)
