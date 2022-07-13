@@ -279,3 +279,7 @@ console.log(typeof floatAge); //number
 //Math and Rounding
 //Square Root
 console.log(Math.sqrt(25)); //5
+// you can use exponentation operator
+console.log(25 ** (1 / 2)); // 2 is the square
+
+console.log(8 ** (1 / 3)); // calculating the cubic root
