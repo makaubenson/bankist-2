@@ -195,3 +195,6 @@
 ### Internationalizing Dates
 
 - Js has a new internationalization API which allows us ato format numbers and strings based on different languages.
+- Getting locale parameter from the users browser
+- `const locale = navigator.language;`
+- `labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);`
