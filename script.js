@@ -179,6 +179,19 @@ currentAccount = account1;
 updateUI(currentAccount);
 containerApp.style.opacity = 100;
 
+//Experimenting Internationalization API
+//current Date
+const now = new Date();
+const options = {
+  hour: '2-digit',
+  minute: 'numeric',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  weekday: 'long',
+};
+labelDate.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
+
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault(); //prevent default bevahior
   // console.log('LOGIN');

@@ -192,4 +192,6 @@
 - `console.log(future.getMilliseconds()); //0`
 - `console.log(future.toISOString()); //2037-11-19T12:23:00.000Z`
 
-##### get timestamp for the date(milliseconds that have passed since january 1970 when unix time came to existence
+### Internationalizing Dates
+
+- Js has a new internationalization API which allows us ato format numbers and strings based on different languages.
