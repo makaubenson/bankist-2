@@ -78,7 +78,7 @@
 
 #### Function to Generate random number
 
-- `const randomInt = (min, max) => Math.trunc(Math.random() * (max - min) + 1)+ min;`
+- `const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + 1)+ min;`
 - `console.log(randomInt(1, 10));`
 
 ### Rounding Integers
