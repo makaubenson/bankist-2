@@ -343,7 +343,7 @@ labelBalance.addEventListener('click', function () {
     if (i % 3 === 0) row.style.backgroundColor = 'blue';
   });
 });
-*/
+
 
 //Numeric Separators
 const diameter = 287_460_000_000;
@@ -357,3 +357,21 @@ console.log(PI);
 
 console.log(Number('230_000')); //NaN
 console.log(parseInt('230_000')); //230
+*/
+
+//BIGINT
+console.log(2 ** 53 - 1); //9007199254740991
+console.log(Number.MAX_SAFE_INTEGER); //9007199254740991
+console.log(54585885544555256985211236578n);
+console.log(BigInt(54585885544578));
+
+console.log(20n > 15); //true
+console.log(20n === 20); //false
+console.log(20n == 20); //true
+console.log(typeof 20n); //bigint
+// console.log(Math.sqrt(16n));
+
+//divisions
+console.log(11 / 3); //3.6666666666666665
+console.log(11n / 3n); //3n
+console.log(12n / 3n); //4n

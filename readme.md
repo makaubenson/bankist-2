@@ -130,3 +130,34 @@
 
 - `console.log(Number('230_000')); //NaN`
 - `console.log(parseInt('230_000')); //230`
+
+### BIGINT
+
+- Special type of integers
+- Since numbers are represented in 64bits it implies that, there are 64 0s and 1s to represent a particular number.
+- 53 are used to store digjits, the rest are for storing the position of decimal points and sign.
+- `console.log(2 ** 53 - 1); //9007199254740991`
+- `console.log(Number.MAX_SAFE_INTEGER); //9007199254740991`
+- Any number greater than the MAX_SAFE_INTEGER cannot be represented safely and accurately.
+- However to represent numbers larger than the MAX_SAFE_INTEGER, we use bigint.
+
+##### Creating Bigint
+
+- `console.log(54585885544555256985211236578n);` -Adding n at the end of the value converts it to a bigint. Reliable for very large values.
+
+- `console.log(BigInt(54585885544555256985211236578));`- Using BigInt() method. This method is prefered for smaller values.
+- It is not possible to mix bigint values with other types. To mix them, you have to make all values to be bigint.
+
+- `console.log(20n > 15); //true`
+- `console.log(20n === 20); //false`
+- BigInt doesnt do type coercion.
+
+- Math functions cannot work with the bigint
+- e.g `console.log(Math.sqrt(16n));`
+- Output for the above op: `script.js:372 Uncaught TypeError: Cannot convert a BigInt value to a number at Math.sqrt (<anonymous>)`
+
+#### BigInt Divisions
+
+- `console.log(11 / 3); //3.6666666666666665 `
+- `console.log(11n / 3n); //3n`- Truncates the decimal part.
+- `console.log(12n / 3n); //4n`
