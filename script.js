@@ -385,3 +385,12 @@ console.log(now); //Wed Jul 13 2022 12:04:20 GMT+0300 (East Africa Time)
 // Method 2
 console.log(new Date('July 13 2022 12:05:41')); //Wed Jul 13 2022 12:05:41 GMT+0300 (East Africa Time)
 console.log(new Date('December 24, 2015')); //Thu Dec 24 2015 00:00:00 GMT+0300 (East Africa Time)
+
+console.log(account1.movementsDates[0]); //2019-11-18T21:31:17.178Z
+
+console.log(new Date(2037, 10, 19, 15, 23, 5)); //Thu Nov 19 2037 15:23:05 GMT+0300 (East Africa Time)
+console.log(new Date(2037, 10, 31)); //Tue Dec 01 2037 00:00:00 GMT+0300 (East Africa Time)
+
+//Find milliseconds that passed since the beginning of unix time.
+console.log(new Date(0)); //Thu Jan 01 1970 03:00:00 GMT+0300 (East Africa Time)
+console.log(new Date(3 * 24 * 60 * 60 * 1000)); //Sun Jan 04 1970 03:00:00 GMT+0300 (East Africa Time)

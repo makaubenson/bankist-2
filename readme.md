@@ -173,3 +173,6 @@
 
 - Method 2
 - `console.log(new Date('July 13 2022 12:05:41')); //Wed Jul 13 2022 12:05:41 GMT+0300 (East Africa Time)`
+- `console.log(new Date(2037, 10, 31)); //Tue Dec 01 2037 00:00:00 GMT+0300 (East Africa Time)` - Js auto corrects if invalid date is input. For the case above, there is no 31st in november, thus it autocorrects to date 1 dec.
+
+##### Find milliseconds that passed since the beginning of unix time.
