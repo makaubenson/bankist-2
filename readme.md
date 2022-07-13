@@ -99,3 +99,10 @@
 - console.log(Math.floor(23.3)); //23
 - console.log(Math.floor(23.9)); //23
 - does type coercion
+
+### Rounding Decimals
+
+- The toFixed() method formats a number using fixed-point notation.
+- `console.log((2.7).toFixed(0)); //3`
+- toFixed returns a string not a number
+- `console.log((2.7).toFixed(3)); //2.700 a string`

@@ -300,7 +300,7 @@ console.log(Math.PI * Number.parseFloat('10px') ** 2);
 
 console.log(Math.trunc(Math.random() * 6));
 console.log(Math.trunc(Math.random() * 6));
-*/
+
 const randomInt = (min, max) =>
   Math.floor(Math.random() * (max - min) + 1) + min;
 // console.log(randomInt(10, 20));
@@ -314,3 +314,9 @@ console.log(Math.ceil(23.9)); //24
 
 console.log(Math.floor(23.3)); //23
 console.log(Math.floor(23.9)); //23
+*/
+
+//Rounding Decimals
+console.log((2.7).toFixed(0)); //3  a string
+console.log((2.7).toFixed(3)); //2.700 a string
+console.log((2.345).toFixed(2)); //2.35 a string
