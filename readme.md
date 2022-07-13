@@ -43,3 +43,10 @@
 - `console.log(Number.isFinite('10')); //false`
 - `console.log(Number.isFinite(+'10x')); //false`
 - `console.log(Number.isFinite(23 / 0)); //false`
+
+### isInteger()
+
+- `console.log(Number.isInteger(10)); //true`
+- `console.log(Number.isInteger('10')); //false`
+- `console.log(Number.isInteger(+'10x')); //false`
+- `console.log(Number.isInteger(23 / 0)); //false`
