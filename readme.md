@@ -50,3 +50,9 @@
 - `console.log(Number.isInteger('10')); //false`
 - `console.log(Number.isInteger(+'10x')); //false`
 - `console.log(Number.isInteger(23 / 0)); //false`
+
+## Math and Rounding
+
+### Square Root
+
+- `console.log(Math.sqrt(25)); //5`
