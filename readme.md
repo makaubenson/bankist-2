@@ -71,3 +71,7 @@
 - console.log(Math.min(5, 18, 23, 11, 2)); //2
 - console.log(Math.min(5, 18, '23', 11, 2)); //2
 - console.log(Math.min(5, 18, '23px', 11, 2)); //NaN - results to NaN since it doesnt does parsing
+
+- `console.log(Math.random());` - Gives a random number between 0 and 9
+
+- `console.log(Math.trunc(Math.random() * 6) + 1);` - Math.trunc removes the decimal points in a number
