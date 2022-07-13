@@ -22,3 +22,9 @@
 
 - `console.log(Number.parseFloat('30px', 10)); //30`
 - `console.log(Number.parseFloat('30.15px', 10)); //30.15`
+
+- `parseInt(), parseFloat() and the other parsing functions are known as global functions. This implies that when being called, its not a must they are called on an object.`
+- e.g
+- `console.log(Number.parseFloat('30px', 10)); //30`- The method is called on the object `Number`
+- can be reached by
+  `console.log(parseFloat('30px', 10)); //30`- The number method is removed.
