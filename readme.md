@@ -106,3 +106,12 @@
 - `console.log((2.7).toFixed(0)); //3`
 - toFixed returns a string not a number
 - `console.log((2.7).toFixed(3)); //2.700 a string`
+
+### The Remainder Operator (%)
+
+- The remainder operator (%) returns the remainder left over when one operand is divided by a second operand.
+- It always takes the sign of the dividend.
+- console.log(5 % 2); //1
+- console.log(5 / 2); //2.5
+- console.log(8 % 3); //2
+- console.log(8 / 3); //2.6666666666666665

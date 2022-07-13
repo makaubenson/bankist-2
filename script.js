@@ -321,3 +321,18 @@ console.log((2.7).toFixed(0)); //3  a string
 console.log((2.7).toFixed(3)); //2.700 a string
 console.log((2.345).toFixed(2)); //2.35 a string
 */
+//The Remainder Operator
+console.log(5 % 2); //1
+console.log(5 / 2); //2.5
+console.log(8 % 3); //2
+console.log(8 / 3); //2.6666666666666665
+
+//check if number is even(if remainder is 0, it is even)
+console.log(6 % 2); //0 thus it is even
+
+const isEven = function (n) {
+  return n % 2 === 0;
+};
+console.log(isEven(8)); //true
+console.log(isEven(9)); //false
+console.log(isEven(16)); //true
