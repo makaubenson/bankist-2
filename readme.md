@@ -161,3 +161,9 @@
 - `console.log(11 / 3); //3.6666666666666665 `
 - `console.log(11n / 3n); //3n`- Truncates the decimal part.
 - `console.log(12n / 3n); //4n`
+
+## Dates
+
+### Creating Dates
+
+- There are 4 ways of creating dates.

@@ -376,3 +376,7 @@ console.log(11 / 3); //3.6666666666666665
 console.log(11n / 3n); //3n
 console.log(12n / 3n); //4n
 */
+
+//Creating Dates
+const now = new Date();
+console.log(now); //Wed Jul 13 2022 12:04:20 GMT+0300 (East Africa Time)
