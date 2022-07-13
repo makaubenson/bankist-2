@@ -357,7 +357,7 @@ console.log(PI);
 
 console.log(Number('230_000')); //NaN
 console.log(parseInt('230_000')); //230
-*/
+
 
 //BIGINT
 console.log(2 ** 53 - 1); //9007199254740991
@@ -375,3 +375,4 @@ console.log(typeof 20n); //bigint
 console.log(11 / 3); //3.6666666666666665
 console.log(11n / 3n); //3n
 console.log(12n / 3n); //4n
+*/
