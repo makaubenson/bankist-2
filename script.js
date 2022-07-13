@@ -288,3 +288,11 @@ console.log(8 ** (1 / 3)); // calculating the cubic root
 console.log(Math.max(5, 18, 23, 11, 2)); //23
 console.log(Math.max(5, 18, '23', 11, 2)); //23
 console.log(Math.max(5, 18, '23px', 11, 2)); //NaN
+
+//find min value, using (Math.min())
+console.log(Math.min(5, 18, 23, 11, 2)); //23
+console.log(Math.min(5, 18, '23', 11, 2)); //23
+console.log(Math.min(5, 18, '23px', 11, 2)); //NaN
+
+//constants in the Math namespace
+console.log(Math.PI * Number.parseFloat('10px') ** 2);

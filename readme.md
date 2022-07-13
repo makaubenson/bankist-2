@@ -65,3 +65,9 @@
 - console.log(Math.max(5, 18, 23, 11, 2)); //23
 - console.log(Math.max(5, 18, '23', 11, 2)); //23 - It results to 23 since it does type coercion of string 23 to number 23
 - console.log(Math.max(5, 18, '23px', 11, 2)); //NaN - results to NaN since it doesnt does parsing
+
+### find max value, using (Math.min())
+
+- console.log(Math.min(5, 18, 23, 11, 2)); //2
+- console.log(Math.min(5, 18, '23', 11, 2)); //2
+- console.log(Math.min(5, 18, '23px', 11, 2)); //NaN - results to NaN since it doesnt does parsing
