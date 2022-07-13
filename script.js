@@ -375,7 +375,7 @@ console.log(typeof 20n); //bigint
 console.log(11 / 3); //3.6666666666666665
 console.log(11n / 3n); //3n
 console.log(12n / 3n); //4n
-*/
+
 
 //Creating Dates
 //Method 1
@@ -394,3 +394,25 @@ console.log(new Date(2037, 10, 31)); //Tue Dec 01 2037 00:00:00 GMT+0300 (East A
 //Find milliseconds that passed since the beginning of unix time.
 console.log(new Date(0)); //Thu Jan 01 1970 03:00:00 GMT+0300 (East Africa Time)
 console.log(new Date(3 * 24 * 60 * 60 * 1000)); //Sun Jan 04 1970 03:00:00 GMT+0300 (East Africa Time)
+*/
+//working with dates
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future); //Thu Nov 19 2037 15:23:00 GMT+0300 (East Africa Time)
+
+console.log(future.getFullYear()); //2037
+// console.log(future.getYear());// not recommended
+console.log(future.getMonth()); //10 => November
+console.log(future.getDate()); //19 - Day of the month
+console.log(future.getDay()); //4 - Day of the week (0 is sunday, thus 4 is thursday)
+console.log(future.getHours()); //15
+console.log(future.getMinutes()); //23
+console.log(future.getSeconds()); //0
+console.log(future.getMilliseconds()); //0
+console.log(future.toISOString()); //2037-11-19T12:23:00.000Z
+
+//get timestamp for the date(milliseconds that have passed since january 1970)
+console.log(future.getTime());
+console.log(new Date(2142246180000));
+
+//get current time stamp
+console.log(Date.now());

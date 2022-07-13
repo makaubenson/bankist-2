@@ -176,3 +176,20 @@
 - `console.log(new Date(2037, 10, 31)); //Tue Dec 01 2037 00:00:00 GMT+0300 (East Africa Time)` - Js auto corrects if invalid date is input. For the case above, there is no 31st in november, thus it autocorrects to date 1 dec.
 
 ##### Find milliseconds that passed since the beginning of unix time.
+
+### working with dates
+
+- `const future = new Date(2037, 10, 19, 15, 23);`
+- `console.log(future); //Thu Nov 19 2037 15:23:00 GMT+0300 (East Africa Time)`
+
+- `console.log(future.getFullYear()); //2037`
+- `console.log(future.getMonth()); //10 => November`
+- `console.log(future.getDate()); //19 - Day of the month`
+- `console.log(future.getDay()); //4 - Day of the week`
+- `console.log(future.getHours()); //15`
+- `console.log(future.getMinutes()); //23`
+- `console.log(future.getSeconds()); //0`
+- `console.log(future.getMilliseconds()); //0`
+- `console.log(future.toISOString()); //2037-11-19T12:23:00.000Z`
+
+##### get timestamp for the date(milliseconds that have passed since january 1970 when unix time came to existence
