@@ -336,3 +336,10 @@ const isEven = function (n) {
 console.log(isEven(8)); //true
 console.log(isEven(9)); //false
 console.log(isEven(16)); //true
+
+labelBalance.addEventListener('click', function () {
+  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+    if (i % 2 === 0) row.style.backgroundColor = 'orangered';
+    if (i % 3 === 0) row.style.backgroundColor = 'blue';
+  });
+});
