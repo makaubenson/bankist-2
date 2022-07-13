@@ -80,3 +80,7 @@
 
 - `const randomInt = (min, max) => Math.trunc(Math.random() * (max - min) + 1)+ min;`
 - `console.log(randomInt(1, 10));`
+
+### Rounding Integers
+
+- `console.log(Math.trunc(23.3));` - Removes any decimal part
