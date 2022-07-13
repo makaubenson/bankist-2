@@ -149,6 +149,21 @@ const updateUI = function (acc) {
 };
 //Implimenting Login
 let currentAccount;
+
+// FAKE ALWAYS LOGGED IN
+currentAccount = account1;
+updateUI(currentAccount);
+containerApp.style.opacity = 100;
+
+//add todays date on bankist app.
+const now = new Date();
+const day = `${now.getDate()}`.padStart(2, 0);
+const month = `${now.getMonth() + 1}`.padStart(2, 0);
+const year = now.getFullYear();
+const hour = `${now.getHours()}`.padStart(2, 0);
+const min = `${now.getMinutes()}`.padStart(2, 0);
+labelDate.textContent = `${day}/${month}/${year}, ${hour}:${min}`;
+
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault(); //prevent default bevahior
   // console.log('LOGIN');
@@ -394,7 +409,7 @@ console.log(new Date(2037, 10, 31)); //Tue Dec 01 2037 00:00:00 GMT+0300 (East A
 //Find milliseconds that passed since the beginning of unix time.
 console.log(new Date(0)); //Thu Jan 01 1970 03:00:00 GMT+0300 (East Africa Time)
 console.log(new Date(3 * 24 * 60 * 60 * 1000)); //Sun Jan 04 1970 03:00:00 GMT+0300 (East Africa Time)
-*/
+
 //working with dates
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(future); //Thu Nov 19 2037 15:23:00 GMT+0300 (East Africa Time)
@@ -420,3 +435,4 @@ console.log(Date.now());
 //set versions of the Date methods
 future.setFullYear(2040);
 console.log(future);
+*/
