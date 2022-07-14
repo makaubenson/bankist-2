@@ -499,8 +499,9 @@ console.log(days1);
 //Internationalization of Numbers
 const num = 3884764.23;
 const options = {
-  style: 'unit',
-  unit: 'mile-per-hour',
+  style: 'currency', //percent,currency,unit
+  unit: 'mile-per-hour', //celcius,mile-per-hour
+  currency: 'EUR',
 };
 console.log('US: ', new Intl.NumberFormat('en-US', options).format(num)); //US:  3,884,764.23
 console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num)); //US:  3,884,764.23
