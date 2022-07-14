@@ -261,3 +261,14 @@ if (ingredients.includes('Spinach')) clearTimeout(pizzaTimer);
 ```
 
 - In summary, `setTimeout()` schedules a function to run after a certain amount of time.
+
+### setInteval()
+
+```
+setInterval(function () {
+  const now = new Date();
+  console.log(now);
+}, 3000);
+```
+
+-The above code prints the current time and date after every 3 seconds.

@@ -544,3 +544,9 @@ const pizzaTimer = setTimeout(
   ...ingredients
 ); //This functions receives call back function
 if (ingredients.includes('Spinach')) clearTimeout(pizzaTimer);
+
+//setInterval()
+setInterval(function () {
+  const now = new Date();
+  console.log(now);
+}, 1000);
