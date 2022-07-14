@@ -272,3 +272,15 @@ setInterval(function () {
 ```
 
 -The above code prints the current time and date after every 3 seconds.
+
+## Test Creds
+
+```
+username: js
+password: 1111
+```
+
+```
+username: jd
+password: 2222
+```
