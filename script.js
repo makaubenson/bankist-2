@@ -186,6 +186,18 @@ const updateUI = function (acc) {
   //display Summary
   calcDisplaySummary(acc);
 };
+const startLogoutTimer = function () {
+  //set time to 5 mins
+  let time = 100;
+  //call the timer every second
+  setInterval(function () {
+    //In each call, print remaining time to UI
+    labelTimer.textContent = time;
+    //decrease one second
+    time = time - 1; //time--
+    //when time is 0 sec, stop timer and logout user
+  }, 1000);
+};
 //Implimenting Login
 let currentAccount;
 
@@ -236,6 +248,7 @@ btnLogin.addEventListener('click', function (e) {
     //clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
+    startLogoutTimer();
     //Updating User Interface Values
     updateUI(currentAccount);
   }
@@ -537,16 +550,16 @@ console.log(days1);
 // ); //This functions receives call back function
 
 //demonstrating how to add more arguments dyanmically.
-const ingredients = ['Olives', 'Spinach', 'Tomatoes'];
-const pizzaTimer = setTimeout(
-  (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}`),
-  3000,
-  ...ingredients
-); //This functions receives call back function
-if (ingredients.includes('Spinach')) clearTimeout(pizzaTimer);
+// const ingredients = ['Olives', 'Spinach', 'Tomatoes'];
+// const pizzaTimer = setTimeout(
+//   (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}`),
+//   3000,
+//   ...ingredients
+// ); //This functions receives call back function
+// if (ingredients.includes('Spinach')) clearTimeout(pizzaTimer);
 
-//setInterval()
-setInterval(function () {
-  const now = new Date();
-  console.log(now);
-}, 1000);
+// //setInterval()
+// setInterval(function () {
+//   const now = new Date();
+//   console.log(now);
+// }, 1000);
