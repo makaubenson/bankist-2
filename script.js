@@ -527,4 +527,9 @@ console.log(days1);
 // );
 
 // Timers
-setTimeout(() => console.log('Here is your pizza '), 3000); //This functions receives call back function
+setTimeout(
+  (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}`),
+  3000,
+  'olives',
+  'spinach'
+); //This functions receives call back function

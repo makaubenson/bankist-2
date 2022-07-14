@@ -235,9 +235,15 @@
 ##### setTimeout() method
 
 ```
-  setTimeout(() => console.log('Here is your pizza '), 3000); //This functions receives call back function
+setTimeout(
+  (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}`),
+  3000,
+  'olives',
+  'spinach'
+);
 ```
 
 - `() => console.log('Here is your pizza ')` is a callback function which is the first argument, then
 - `3000` is the second argument which represent time in milliseconds
 - `1 sec == 1000 milliseconds`
+- We can cancel the timeout before the delay is over.
