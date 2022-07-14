@@ -225,3 +225,19 @@
     }).format(value);
   };
   ```
+
+### Timers
+
+- We have 2 types of timers in Js:- `SETTIMEOUT` and `SETINTERVAL` timers.
+- SETTIMEOUT - runs once after a defined time. (Can be used to execute some code in future)
+- SETINTERVAL - keeps running throughout until we stop it.
+
+##### setTimeout() method
+
+```
+  setTimeout(() => console.log('Here is your pizza '), 3000); //This functions receives call back function
+```
+
+- `() => console.log('Here is your pizza ')` is a callback function which is the first argument, then
+- `3000` is the second argument which represent time in milliseconds
+- `1 sec == 1000 milliseconds`

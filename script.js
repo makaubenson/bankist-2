@@ -525,3 +525,6 @@ console.log(days1);
 //   navigator.language,
 //   new Intl.NumberFormat(navigator.language, options).format(num)
 // );
+
+// Timers
+setTimeout(() => console.log('Here is your pizza '), 3000); //This functions receives call back function
