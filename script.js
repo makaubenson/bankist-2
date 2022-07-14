@@ -187,24 +187,35 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 const startLogoutTimer = function () {
-  //set time to 5 mins
-  let time = 100;
-  //call the timer every second
-  setInterval(function () {
+  const tick = function () {
+    const min = `${Math.trunc(time / 60)}`.padStart(2, 0);
+    const sec = String(time % 60).padStart(2, 0);
     //In each call, print remaining time to UI
-    labelTimer.textContent = time;
+    labelTimer.textContent = `${min}:${sec}`;
+
+    //when time is 0 sec, stop timer and logout user
+    if (time === 0) {
+      clearInterval(timer);
+      labelWelcome.textContent = 'Log in to Get Started';
+      containerApp.style.opacity = 0;
+    }
     //decrease one second
     time = time - 1; //time--
-    //when time is 0 sec, stop timer and logout user
-  }, 1000);
+  };
+  //set time to 5 mins
+  let time = 120;
+  //call the timer every second
+  tick();
+  const timer = setInterval(tick, 1000);
+  return timer;
 };
 //Implimenting Login
-let currentAccount;
+let currentAccount, timer;
 
 // FAKE ALWAYS LOGGED IN
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
+// currentAccount = account1;
+// updateUI(currentAccount);
+// containerApp.style.opacity = 100;
 
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault(); //prevent default bevahior
@@ -248,7 +259,9 @@ btnLogin.addEventListener('click', function (e) {
     //clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
-    startLogoutTimer();
+    //Timer
+    if (timer) clearInterval(timer);
+    timer = startLogoutTimer();
     //Updating User Interface Values
     updateUI(currentAccount);
   }
