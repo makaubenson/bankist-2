@@ -232,7 +232,7 @@
 - SETTIMEOUT - runs once after a defined time. (Can be used to execute some code in future)
 - SETINTERVAL - keeps running throughout until we stop it.
 
-##### setTimeout() method
+### setTimeout() method
 
 ```
 setTimeout(
