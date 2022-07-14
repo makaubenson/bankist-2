@@ -321,6 +321,9 @@ btnLoan.addEventListener('click', function (e) {
   }
   //clear input value
   inputLoanAmount.value = '';
+  //Reset Timer
+  clearInterval(timer);
+  timer = startLogoutTimer(); //start timer again
 });
 
 //The findIndex() METHOD
