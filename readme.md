@@ -198,3 +198,12 @@
 - Getting locale parameter from the users browser
 - `const locale = navigator.language;`
 - `labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);`
+
+### Internationalization of Numbers
+
+- `const num = 3884764.23;`
+- `const options = { style: 'unit', unit: 'mile-per-hour', };`
+- `console.log('US: ', new Intl.NumberFormat('en-US', options).format(num)); //US: 3,884,764.23`
+- `console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num)); //US: 3,884,764.23`
+- `console.log('Syria: ', new Intl.NumberFormat('ar-SY', options).format(num)); //US: 3,884,764.23`
+- `console.log( navigator.language, new Intl.NumberFormat(navigator.language, options).format(num) );`
