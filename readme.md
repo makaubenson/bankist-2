@@ -214,3 +214,13 @@
 - `console.log('Syria: ', new Intl.NumberFormat('ar-SY', options).format(num)); //US: 3,884,764.23`
 - `console.log( navigator.language, new Intl.NumberFormat(navigator.language, options).format(num) );`
 - More on documentation
+
+### Function to internationalize currency
+
+- ```const formatCur = function (value, locale, currency) {
+  return new Intl.NumberFormat(locale, {
+  style: 'currency',
+  currency: currency,
+  }).format(value);
+  };
+  ```
