@@ -94,6 +94,7 @@ const formatMovementDate = function (date, locale) {
   }
 };
 
+const formatCur = function () {};
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 

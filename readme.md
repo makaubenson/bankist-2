@@ -202,7 +202,13 @@
 ### Internationalization of Numbers
 
 - `const num = 3884764.23;`
-- `const options = { style: 'currency', //percent,currency,unit unit: 'mile-per-hour', //celcius,mile-per-hour currency: 'EUR', useGrouping: true, //false };`
+- ````const options = {
+    style: 'currency', //percent,currency,unit
+    unit: 'mile-per-hour', //celcius,mile-per-hour
+    currency: 'EUR',
+    useGrouping: true, //false
+  };```
+  ````
 - `console.log('US: ', new Intl.NumberFormat('en-US', options).format(num)); //US: 3,884,764.23`
 - `console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num)); //US: 3,884,764.23`
 - `console.log('Syria: ', new Intl.NumberFormat('ar-SY', options).format(num)); //US: 3,884,764.23`
