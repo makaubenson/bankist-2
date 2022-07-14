@@ -259,3 +259,5 @@ const pizzaTimer = setTimeout(
 ); //This functions receives call back function
 if (ingredients.includes('Spinach')) clearTimeout(pizzaTimer);
 ```
+
+- In summary, `setTimeout()` schedules a function to run after a certain amount of time.
