@@ -535,9 +535,10 @@ console.log(days1);
 // ); //This functions receives call back function
 
 //demonstrating how to add more arguments dyanmically.
-const ingredients = ['Olives', 'Spinanch', 'Tomatoes'];
-setTimeout(
+const ingredients = ['Olives', 'Spinach', 'Tomatoes'];
+const pizzaTimer = setTimeout(
   (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}`),
   3000,
   ...ingredients
 ); //This functions receives call back function
+if (ingredients.includes('Spinach')) clearTimeout(pizzaTimer);

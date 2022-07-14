@@ -247,3 +247,15 @@ setTimeout(
 - `3000` is the second argument which represent time in milliseconds
 - `1 sec == 1000 milliseconds`
 - We can cancel the timeout before the delay is over.
+
+##### clearing setTimeout()
+
+```
+const ingredients = ['Olives', 'Spinach', 'Tomatoes'];
+const pizzaTimer = setTimeout(
+  (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}`),
+  3000,
+  ...ingredients
+); //This functions receives call back function
+if (ingredients.includes('Spinach')) clearTimeout(pizzaTimer);
+```
