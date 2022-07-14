@@ -95,6 +95,7 @@ const formatMovementDate = function (date, locale) {
 };
 
 const formatCur = function () {};
+
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
@@ -503,17 +504,17 @@ console.log(days1);
 */
 
 //Internationalization of Numbers
-const num = 3884764.23;
-const options = {
-  style: 'currency', //percent,currency,unit
-  unit: 'mile-per-hour', //celcius,mile-per-hour
-  currency: 'EUR',
-  useGrouping: true, //false
-};
-console.log('US: ', new Intl.NumberFormat('en-US', options).format(num)); //US:  3,884,764.23
-console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num)); //US:  3,884,764.23
-console.log('Syria: ', new Intl.NumberFormat('ar-SY', options).format(num)); //US:  3,884,764.23
-console.log(
-  navigator.language,
-  new Intl.NumberFormat(navigator.language, options).format(num)
-);
+// const num = 3884764.23;
+// const options = {
+//   style: 'currency', //percent,currency,unit
+//   unit: 'mile-per-hour', //celcius,mile-per-hour
+//   currency: 'EUR',
+//   useGrouping: true, //false
+// };
+// console.log('US: ', new Intl.NumberFormat('en-US', options).format(num)); //US:  3,884,764.23
+// console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num)); //US:  3,884,764.23
+// console.log('Syria: ', new Intl.NumberFormat('ar-SY', options).format(num)); //US:  3,884,764.23
+// console.log(
+//   navigator.language,
+//   new Intl.NumberFormat(navigator.language, options).format(num)
+// );
