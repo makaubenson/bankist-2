@@ -502,6 +502,7 @@ const options = {
   style: 'currency', //percent,currency,unit
   unit: 'mile-per-hour', //celcius,mile-per-hour
   currency: 'EUR',
+  useGrouping: true, //false
 };
 console.log('US: ', new Intl.NumberFormat('en-US', options).format(num)); //US:  3,884,764.23
 console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num)); //US:  3,884,764.23
